@@ -12,7 +12,7 @@ import {
 
 import Button  from 'react-native-button';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
-import { Avatar, Card, Title, Paragraph, Provider as PaperProvider  } from 'react-native-paper';
+import { Avatar, Card, Title, Paragraph } from 'react-native-paper';
 
 
 export default class Home extends Component {
@@ -34,7 +34,7 @@ export default class Home extends Component {
          > FriendsBuilt Inc</Text>
 
         </View>
-      <PaperProvider>
+
 
                 <Card>
 
@@ -85,21 +85,14 @@ export default class Home extends Component {
          >Check it out</Button>
          </View>
         </Card.Actions>
-</Card>
+    </Card>
 
 
 
-       </PaperProvider>
+
     </ScrollView>
 
 
     );
   }
 }
-
-
-const styles = StyleSheet.create({
-
-
-
- });

@@ -8,6 +8,7 @@ import {
   StatusBar,TouchableWithoutFeedback,
   TextInput,KeyboardAvoidingView, Alert,
 } from 'react-native';
+
 import ChatBot  from 'react-native-chatbot';
 
 const steps = [

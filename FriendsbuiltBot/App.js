@@ -10,9 +10,6 @@ const Stack = createStackNavigator();
 
 
 export default class App extends Component{
-	constructor(props){
-		super(props);
-	}
 
 	render(){
 
@@ -22,11 +19,15 @@ export default class App extends Component{
 
           <Stack.Navigator>
 
-             <Stack.Screen  name= "Home" component={ Home } options={{ headerShown: false }} />
 
-            <Stack.Screen name= "Feedback" component={ ChatWithBot }  options={{
+            <Stack.Screen  name= "home" component={Home} options={{
             	headerShown: true ,
             	headerStyle: {backgroundColor:"#FECE21"}
+             }} />
+             <Stack.Screen  name= "chat with bot" component={ChatWithBot}
+						   options={{
+            	 headerShown: true,
+            	 headerStyle: {backgroundColor:"#FECE21"}
              }} />
 
           </Stack.Navigator>

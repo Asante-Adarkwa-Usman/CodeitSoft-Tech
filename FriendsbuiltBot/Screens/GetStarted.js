@@ -3,15 +3,16 @@ import React, { Component } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
-  View,Image,Keyboard,
-  Text,Dimensions,
-  StatusBar,TouchableWithoutFeedback,
-  TextInput,KeyboardAvoidingView, Alert,
+  View,
+  Text,
+  Dimensions,
+ Alert,
 } from 'react-native';
 
-import {theme} from '../Constants/themes';
+
 import Button  from 'react-native-button';
 import Home from '../Screens/Home';
+
 
 
 import { widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
@@ -45,7 +46,7 @@ export default class GetStarted extends Component{
                <View style={{backgroundColor: '#FECE21',    fontWeight: '600', position: 'absolute', top: 0, right: 0,marginVertical: 120,marginHorizontal: 20, zIndex: 100, borderRadius: 30}}>
                <Button
                     style={{fontSize: 20,color:'#382D07' , padding: 7}}
-                    onPress={() => this.props.navigation.navigate('Home')}
+                    onPress={() => this.props.navigation.navigate('home')}
                   > Get Started
 
                    </Button>
